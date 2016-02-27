@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>PhishTravels</title>
+    <!-- leaflet.css appears to cause problems with some styling -->
+    <!-- <link href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" rel="stylesheet" /> -->
+    <link href="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet" />
+    <link href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css" rel="stylesheet">
+    <link href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css" rel="stylesheet">
+    <link href="app/css/map.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="show-info-popup">
+        <a href="#" class="close" style="position: absolute; width: 100%; text-align: center; right 5px; top: 5px;" onclick="$('#show-info-popup').hide(); return false;">CLOSE</a>
+        <div class="content" style="padding: 30px;"></div>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
+    <script src="app/js/map.js"></script>
+
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.0.1/leaflet-omnivore.min.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script src="app/js/pnet.js"></script>
+
+
+</body>
+
+</html>
