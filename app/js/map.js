@@ -19,7 +19,7 @@ var textControl = L.control();
 textControl.onAdd = function(map) {
 	var div = L.DomUtil.create('div', 'leaflet-control');
 	//TODO: set user 'johnnyd' as default value for non-phish.net users
-	div.innerHTML += '<input class="data" type="textbox" input id="username" name="username" placeholder="Phish.net Username"/><button id="advancedSearch" name="submit" type="submit" class="btn btn-default">Search</button>';
+	div.innerHTML += '<input class="data" type="text" input id="username" name="username" placeholder="Phish.net Username"/><button id="advancedSearch" name="submit" type="submit" class="btn btn-default">Search</button>';
 	return div;
 };
 map.addControl(textControl);
